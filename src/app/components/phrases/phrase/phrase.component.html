@@ -1,0 +1,14 @@
+<div class="phrase {{ phrase.model }} ff-roboto-mono" [ngClass]="getWidthCardPhrase()">
+    <img src="/assets/{{ phrase.model }}.png" alt="Aspas coloridas" />
+    <p class="content">{{ phrase.content }}</p>
+    <p class="author"><b>{{ phrase.author }}</b></p>
+
+    <div class="action-buttons">
+        <button class="edit-button" routerLink="/editarPensamento/{{phrase.id}}">
+            <img src="/assets/icone-editar.png" alt="Icone de editar" />
+        </button>
+        <button class="delete-button" routerLink="/excluirPensamento/{{phrase.id}}">
+            <img src="/assets/icone-excluir.png" alt="Icone de excluir" />
+        </button>
+    </div>
+</div>

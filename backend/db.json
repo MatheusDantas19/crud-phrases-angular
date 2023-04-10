@@ -1,0 +1,22 @@
+{
+  "phrases": [
+    {
+      "id": 1,
+      "content": "Que bom que vc veio",
+      "author": "Nay",
+      "model": "model1"
+    },
+    {
+      "id": 2,
+      "content": "Estudando Angular",
+      "author": "Dev Alura",
+      "model": "model2"
+    },
+    {
+      "content": "Aprendendo Angular",
+      "author": "Devasdasdasdasdasdasda",
+      "model": "model3",
+      "id": 3
+    }
+  ]
+}

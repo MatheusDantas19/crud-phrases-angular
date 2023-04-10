@@ -1,0 +1,82 @@
+<section class="container create-phrase ff-inter">
+    <header class="header">
+        <h2>Adicione um <br> pensamento  novo:</h2>
+    </header>
+    <form>
+        <label for="phrase">Pensamento</label>
+        <input type="textarea" class="input" id="phrase" name="phrase" placeholder="Digite o pensamento" [(ngModel)]="phrase.content" />
+        
+        <label for="author">Autor(a) ou fonte</label>
+        <input type="textarea" class="input" id="author" name="author"
+            placeholder="Insira o nome do(a) autor(a) ou fonte" [(ngModel)]="phrase.author" />
+
+        <label for="model">Selecione o modelo do card:</label>
+
+        <div class="container-radio">
+            <div class="radio-model">
+                <label for="model1">
+                    <input type="radio" id="model1" value="model1" name="model-card" [(ngModel)]="phrase.model"/>
+
+                    <div class="custom-radio">
+                        <span></span>
+                    </div>
+        
+                    <span>Modelo 1</span>
+                </label>
+                Prévia:
+                <div class="model model1 ff-roboto-mono">
+                    <img src="../../../../assets/model1.png" alt="Aspas azuis" />
+                    <p class="content">{{phrase.content}}</p>
+                    <p class="author">
+                        <b>{{phrase.author}}</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="radio-model">
+                <label for="model2">
+                    <input type="radio" id="model2" value="model2" name="model-card" [(ngModel)]="phrase.model"/>
+
+                    <div class="custom-radio">
+                        <span></span>
+                    </div>
+        
+                    <span>Modelo 2</span>
+                </label>
+                Prévia:
+                <div class="model model2 ff-roboto-mono">
+                    <img src="../../../../assets/model2.png" alt="Aspas azul claro" />
+                    <p class="content">{{phrase.content}}</p>
+                    <p class="author">
+                        <b>{{phrase.author}}</b>
+                    </p>
+                </div>
+            </div>
+
+            <div class="radio-model">
+                <label for="model3">
+                    <input type="radio" id="model3" value="model3" name="model-card" [(ngModel)]="phrase.model"/>
+
+                    <div class="custom-radio">
+                        <span></span>
+                    </div>
+        
+                    <span>Modelo 3</span>
+                </label>
+                Prévia:
+                <div class="model model3 ff-roboto-mono">
+                    <img src="../../../../assets/model3.png" alt="Aspas verdes" />
+                    <p class="content">{{phrase.content}}</p>
+                    <p class="author">
+                        <b>{{phrase.author}}</b>
+                    </p>
+                </div>
+            </div>
+        </div>
+
+        <div class="action-buttons">
+            <button class="button" (click)="createPhrase()">Salvar</button>
+            <button class="button" routerLink="/">Cancelar</button>
+        </div>
+    </form>
+</section>
