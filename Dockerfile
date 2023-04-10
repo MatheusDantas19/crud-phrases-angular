@@ -6,13 +6,11 @@ COPY . .
 
 RUN npm install -g @angular/cli
 
-# RUN cd backend
+RUN cd backend
 
-# RUN npm install
+RUN npm install
 
-# RUN npm start
-
-# RUN cd ..
+RUN cd ..
 
 RUN npm install
 
